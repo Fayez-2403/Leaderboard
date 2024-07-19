@@ -1,0 +1,24 @@
+.app {
+    text-align: center;
+    background-image: url('../assets/Daily View.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

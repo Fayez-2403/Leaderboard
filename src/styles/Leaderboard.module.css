@@ -1,0 +1,143 @@
+@keyframes flyIn {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes replaceIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes highlight {
+    0% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  .leaderboard {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .scoreList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
+  }
+  
+  .headerRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+  }
+  
+  .scoreItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.5s ease;
+    background-color: #333;
+    color: rgb(4, 7, 7);
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .scoreItem.newEntry {
+    animation: flyIn 1s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .scoreItem.newEntry.replace {
+    animation: replaceIn 0.5s ease;
+  }
+  
+  .scoreItem.thirdPlace {
+    background-color: red;
+  }
+  
+  .rank {
+    flex: 1;
+    text-align: left;
+    background-image: url('../assets/trophy.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: highlight 1s infinite alternate;
+  }
+  
+  .name, .amount, .time {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .topScore1 {
+    background-color: gold;
+  }
+  
+  .topScore2 {
+    background-color: silver;
+  }
+  
+  .recentEntry {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .recentEntryItem {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

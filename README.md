@@ -36,6 +36,14 @@ This is a responsive and interactive leaderboard web application built with Reac
 |-- ...
 ```
 
+WebApp View- Responsiveness
+Window Tab View-
+![Desktop view](https://github.com/user-attachments/assets/c67e0765-8bcd-48ad-ab27-aa6dba3b79a6)
+
+Phone View-
+![phone view](https://github.com/user-attachments/assets/04955935-ca0d-4fcd-b9d9-417aa04a2242)
+
+
 ## Installation
 
 1. **Clone the repository:**
